@@ -1,1 +1,52 @@
 <p>header works!</p>
+
+<app-child-header  [data]="filterdProducts" [childSearchText]="parentSearchText"  (childbuttonclicked)="passChildToParent($event)"></app-child-header>
+
+
+<input type="search" [(ngModel)]="parentSearchText" (input)="filterData($event)">
+search name : {{parentSearchText}}
+
+
+
+<div>bewlow is text from child</div>
+{{textFromChild}}
+
+<!-- <div>below is string interpolation</div>
+<div>My name is {{names}}</div>
+
+<div>I study in std : {{std}}</div>
+
+<div>below is event binding</div>
+<button (click)="getData()"> show or hide on click</button>
+<div [hidden]="isShow">this is hidden or will be shown</div>
+
+
+<input [value]="names" (input)="DataChanged($event)">
+
+{{names}} -->
+
+
+<!-- <div>below id two way binding</div>
+<input  [(ngModel)]="names">
+
+<div *ngIf="names.trim()"> user is typeing : {{names}}</div>
+
+
+<div [ngStyle]="{color:'red',fontWeight:50}">helo ji</div>
+<div [ngClass]="{'btn':true,'btn-primary':demodata,'btn-danger':true}">class directive example</div> -->
+
+<!-- <div *ngFor="let data of data">
+{{data}}
+</div> -->
+
+
+
+<!-- 
+<div *ngFor="let data of products,let i =index">
+
+    <div>id is : {{data.id}}</div>
+    <div>name is : {{data.name}}</div>
+    <div>age is : {{data.age}}</div>
+    <div>location is : {{data.location}}</div>
+    <div>index is : {{i}}</div>
+</div> -->

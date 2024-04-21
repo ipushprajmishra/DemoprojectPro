@@ -1,0 +1,14 @@
+<p>child-header works!</p>
+
+
+only showing : {{childSearchText}}
+
+<div *ngFor="let product of data,let i =index">
+
+    <div>id is : {{product.id}}</div>
+    <div>name is : {{product.name}}</div>
+    <div>age is : {{product.age}}</div>
+    <div>location is : {{product.location}}</div>
+  <button [value]="product.id" (click)="onButtonClick($event)">{{product.id + ' ' + product.age  }}</button>
+</div> 
+

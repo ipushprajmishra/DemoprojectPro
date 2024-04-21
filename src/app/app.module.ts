@@ -4,19 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { HtmlAttributeSelectorComponent } from './html-attribute-selector/html-attribute-selector.component';
-import { CssClasseSelectorComponent } from './css-classe-selector/css-classe-selector.component';
+import { FormsModule } from '@angular/forms';
+import { ChildHeaderComponent } from './header/child-header/child-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HtmlAttributeSelectorComponent,
-    CssClasseSelectorComponent
+    ChildHeaderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
